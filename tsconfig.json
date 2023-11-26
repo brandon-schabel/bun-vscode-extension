@@ -13,5 +13,5 @@
     "skipLibCheck": true,
     "baseUrl": "./src"
   },
-  "include": ["package.json", "./*.ts", "src/**/*", "node_modules/bnkit"]
+  "include": ["package.json", "./*.ts", "src/**/*"]
 }

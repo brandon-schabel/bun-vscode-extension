@@ -1,7 +1,13 @@
 {
-  "name": "bun-nook-kit",
-  "version": "1.0.0",
+  "name": "bun-vscode-extension",
   "main": "./dist/index.js",
+  "version": "0.0.1",
+  "scripts": {
+    "vscode:prepublish": "bun build",
+    "build": "tsc -p ./src",
+    "watch": "tsc -watch -p ./src",
+    "i": "bun i"
+  },
   "devDependencies": {
     "@types/vscode": "^1.1.37",
     "typescript": "^5.3.2",
@@ -20,18 +26,12 @@
       }
     ]
   },
-  "description": "An extension for Bun Nook Kit",
-  "displayName": "Bun Nook Kit Extension",
+  "description": "Bun VSCode Extension",
+  "displayName": "Bun VSCode Extension",
   "engines": {
     "vscode": "^1.74.0",
     "bun": "^1.0.0"
   },
-  "publisher": "brandon-schabel",
-  "scripts": {
-    "vscode:prepublish": "bun build",
-    "build": "tsc -p ./src",
-    "watch": "tsc -watch -p ./src",
-    "i": "bun i"
-  },
+  "publisher": "author-here",
   "type": "commonjs"
 }
