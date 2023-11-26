@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    /* Basic Options */
+    "target": "ESNext",
+    "module": "CommonJS",
+    "lib": ["dom", "ESNext", "dom.iterable", "scripthost"],
+    "moduleDetection": "force",
+    "outDir": "dist",
+    "rootDir": ".",
+    "sourceMap": true,
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "baseUrl": "./src"
+  },
+  "include": ["package.json", "./*.ts", "src/**/*", "node_modules/bnkit"]
+}

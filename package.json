@@ -1,0 +1,40 @@
+{
+  "name": "bun-nook-kit",
+  "displayName": "Bun Nook Kit Extension",
+  "description": "An extension for Bun Nook Kit",
+  "version": "1.0.0",
+  "type": "commonjs",
+  "activationEvents": [],
+  "publisher": "brandon-schabel",
+  "categories": [
+    "Other"
+  ],
+  "main": "./dist/index.js",
+  "engines": {
+    "vscode": "^1.74.0",
+    "bun": "^1.0.0"
+  },
+  "contributes": {
+    "commands": [
+      {
+        "command": "helloworld.helloWorld",
+        "title": "Hello World"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "bun build",
+    "build": "tsc -p ./src",
+    "watch": "tsc -watch -p ./src",
+    "i": "bun i"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.1.37",
+    "typescript": "^5.3.2",
+    "bun-types": "latest",
+    "bun": "latest"
+  },
+  "dependencies": {
+    "bnkit": "latest"
+  }
+}
